@@ -63,6 +63,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs',{
+		pateTitle: 'Projects'
+	});
+});
+
 app.get('/bad', (req, res) => {
 	res.send({
 		message: 'The page is unable for the moment.'
